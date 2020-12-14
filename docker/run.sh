@@ -31,8 +31,6 @@ if [ "$CONFIG_FILE" = "" ]; then
     echo "CONFIG_FILE can't be empty..."
     exit
 fi
-echo "data path: $DATA_DIR"
-echo "config file: $CONFIG_FILE"
 
 PURE_DATA_DIR=${DATA_DIR#*//}
 DATA_DIR_PREFIX=${DATA_DIR%%//*}
